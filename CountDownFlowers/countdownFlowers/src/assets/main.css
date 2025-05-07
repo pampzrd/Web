@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+body{
+  font-family: "Amarante", serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
