@@ -1,0 +1,82 @@
+@import './base.css';
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "Prata", serif;
+  color: #f3b10e;
+}
+
+p{
+  font-family: "Lato", sans-serif;
+  color: #b08001;
+
+}
+#app {
+  max-width: 1280px;
+  margin: 0;
+  padding: 2rem;
+  font-weight: normal;
+  height: 100vh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsl(196, 97%, 48%);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+section{
+  display: flex;
+  width: 100vmax;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  border: 1px red solid;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+/*section:nth-of-type(1){
+  background-image: url("/src/assets/images/bjork-2011-inez-vinoodh-20-virus-sans-illustration.jpg");
+  height: 600px;
+
+}
+section:nth-of-type(3){
+  background-image: url("/src/assets/images/bjc3b6rk-music-biophilia-cosmogony-m_mparis-inez-vinoodh-2011-www-lylybye-blogspot2.jpg");
+  height: 600px;
+}*/
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(184, 100%, 74%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}
