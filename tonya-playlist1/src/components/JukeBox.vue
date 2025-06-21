@@ -4,7 +4,7 @@
 /*PLAYLIST:
 * Billy Ocean - Caribbean Queen
 * The Jets - Crush On You
-* Lisa Lisa & Cult Jam - Head To Toe
+* LisaLisa & Cult Jam - Head To Toe
 * DeBarge - Rhythm Of The Night
 * Shalamar - "A Night To Remember"
 *
@@ -12,6 +12,8 @@
 </script>
 
 <template>
+
+
   <div id="playlist">
     <a href="">Billy Ocean - Caribbean Queen</a>
     <a href="">The Jets - Crush On You</a>
