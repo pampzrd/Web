@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: Linen;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  border: double #004c8b 4px;
+  max-width: 700px;
+  height: 700px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=conteudo.component.css.map */

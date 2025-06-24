@@ -1,0 +1,32 @@
+$Subtitulo:Linen;
+$cor-principal: #5a959d;
+$cor-secundaria:#004c8b;
+$fonte-padrao:"Monda", sans-serif;
+$containerWidth:700px;
+$containerHeight:700px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3{
+  color: $Subtitulo;
+}
+#top{
+  display: flex;
+  align-items: center;
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  border: double $cor-secundaria 4px;
+  max-width: $containerWidth;
+  height: $containerHeight;
+}
+
+
+p{
+  margin: 10px 0;
+}
