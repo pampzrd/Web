@@ -1,11 +1,19 @@
 <script setup>
+const btn=document.getElementById('btnContar');
+const numero=document.getElementById('numeroInputado');
 
+let contagem=0;
+function Contar(){
+  contagem++;
+}
+
+module.exports={contagem};
 </script>
 
 <template>
   <div class="container">
-    <input type="number" value="0">
-    <button id="btnContar">Contar</button>
+    <input id="numeroInputado" type="number" value="{{contagem}}">
+    <button @click="Contar">Contar</button>
   </div>
 
 </template>
