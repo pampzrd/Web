@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Boldonse&family=Monda:wght@400..700&family=Vast+Shadow&display=swap");
+.imgs {
+  width: 180pt;
+  height: 240pt;
+  border-radius: 5%;
+  border: #75b2ef solid 1px;
+  object-fit: cover;
+  overflow: hidden;
+  float: left;
+}
+
+img {
+  height: 100%;
+}
+
+body {
+  font: 100% "Monda", sans-serif;
+  color: #004c8b;
+  background-image: url("./assets/imgs/poster.jpg");
+  width: 90vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1, h2, h3 {
+  color: #5a959d;
+}
+
+/*@media body {
+  width: 1170px;
+
+}*/
+
+/*# sourceMappingURL=styles.css.map */

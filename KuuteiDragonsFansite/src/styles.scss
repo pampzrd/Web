@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Boldonse&family=Monda:wght@400..700&family=Vast+Shadow&display=swap');
+
+$font-stack: Helvetica, sans-serif;
+$cor-principal: #5a959d;
+$fundo: "./assets/imgs/poster.jpg";
+$bodyWidth: 90vw;
+$bodyHeight:auto;
+$fonte-padrao:"Monda", sans-serif;
+$cor-secundaria:#004c8b;
+
+.imgs{
+  width: 180pt;
+  height: 240pt;
+  border-radius: 5%;
+  border: #75b2ef solid 1px;
+  object-fit: cover;
+  overflow: hidden;
+  float: left;
+}
+
+img{
+  height: 100%;
+
+}
+
+body {
+  font: 100% $fonte-padrao;
+  color: $cor-secundaria;
+  background-image:url($fundo);
+  width: $bodyWidth;
+  height: $bodyHeight;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h1,h2,h3{
+  color: $cor-principal;
+}
+
+
+/*@media body {
+  width: 1170px;
+
+}*/
