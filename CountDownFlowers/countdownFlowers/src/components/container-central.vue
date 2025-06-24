@@ -1,10 +1,15 @@
 <script setup>
+import {ref} from 'Vue';
+const {contagem}= require('./input-cronometer.vue');
+
+
+let numero=ref(contagem);
 
 </script>
 
 <template>
   <div class="container">
-    <div class="contador"><h1 id="contador">0</h1></div>
+    <div class="contador"><h1 id="contador">{{numero}}</h1></div>
     <div class="img">
       <img src="../assets/garden0.png" alt="Jardim">
     </div>

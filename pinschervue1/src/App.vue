@@ -9,7 +9,7 @@
 </template>
 
 <script>
-//import TituloComp from './components/TituloComp.vue'
+
 import ImagemComp from "@/components/ImagemComp.vue";
 
 export default {
