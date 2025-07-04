@@ -1,19 +1,51 @@
-<script setup>
+<script>
+
+import LoadingView from "@/components/LoadingView.vue";
+
 const URL="https://dog.ceo/api/breed/pinscher/images/random";
+var status=false;
+
+export default {
+  data(){
+    return{
+      status
+    }
+  },
+  methods:{
+    async function retornarInfo(){
+      status=true;
+      const results = await fetch(URL);
+      if(results.status===200){
+        status=false;
+        const obj = await results.json();
+
+        const imagem = document.getElementById("imagem");
+        imagem.src=obj.message
+        return imagem.src
+      }
+
+    }
+
+
+/*var status=false;
 async function retornarInfo(){
+  status=true;
   const results = await fetch(URL);
   if(results.status===200){
+    status=false;
     const obj = await results.json();
 
     const imagem = document.getElementById("imagem");
     imagem.src=obj.message
     return imagem.src
   }
-}
+
+}*/
+
 </script>
 
 <template>
-
+  <LoadingView v-if="status"></LoadingView>
   <main>
     <div class="container">
       <h1>Gerador de Pinschers</h1>
@@ -21,7 +53,7 @@ async function retornarInfo(){
         <img id="imagem" src="https://images.pexels.com/photos/9642762/pexels-photo-9642762.jpeg" alt="">
       </div>
       <p id="texto">Gerador de Costelas</p>
-      <button v-on:click="retornarInfo()">Gerar</button>
+      <button v-on:click="retornarInfo">Gerar</button>
     </div>
   </main>
 </template>

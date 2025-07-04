@@ -2,7 +2,8 @@
   <body>
   <div class="container">
     <main>
-        <ImagemComp/>
+
+      <ImagemComp/>
     </main>
 </div>
   </body>
@@ -12,12 +13,26 @@
 
 import ImagemComp from "@/components/ImagemComp.vue";
 
+
+
 export default {
   name: 'App',
   components: {
     ImagemComp,
+  },
+  data(){
+    return{
+      mostrarelemento: false
+    }
+  },
+  methods:{
+    mostrar() {
+      this.mostrarelemento = !this.mostrarelemento
+    },
   }
 }
+
+
 </script>
 
 <style>
